@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+[class*="content-"]{
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .content-menu {
+    width: 30%;
+    float: left;
+    margin: 0px;
+    max-width: 527.597px;
+  }
+  .content-main {
+    width: 60%;
+    float: left;
+    max-width: 1085.59px;
+  }
+  #app-permissions-screenshot {
+    height: 40em;
+    width: 22.5em;
+    margin-left: 2%;
+  }
+  #notification-image {
+    width: 15em;
+    margin-left: 2%;
+  }
+}
+#app-permissions-screenshot {
+  max-width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+#notification-image {
+  max-width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.content-menu {
+  background-color: rgb(230,230,230);
+  padding: 10px;
+  font-size: 1.05em;
+}
+.content-menu ul {
+  padding-left: 20px;
+  color: black;
+  font-size: 1.05em;
+}
+.content-menu a:visited {
+  color: blue;
+}
+.content-main {
+  padding: 5px;
+  font-size: 1.05em;
+}
+.content-main ol {
+  font-size: 1.15em;
+  padding-left: 60px;
+}
+.content-main ul {
+  font-size: 1.15em;
+  padding-left: 60px;
+}
+body {font-family: ubuntu;}
+/*#header {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  color: white;
+  top: 0px;
+  padding-left: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}*/
+.full-width {
+  max-width: 1826px;
+}
+p {
+  margin-left: 2%;
+  font-size: 1.15em;
+}
+@font-face {
+  font-family: ubuntu;
+  src: "./meta/fonts/ubuntu-regular.ttf";
+}
+h1 {
+  font-size: 1.65em;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0px;
+  padding: 5px;
+}
+h3 {
+  font-size: 1.25em;
+  margin-left: 20px;
+  margin: 0px;
+  padding: 5px;
+}
+footer p{
+  font-size: 0.75em;
+  margin-left: 0%;
+}
+i {
+  font-style: italic;
+}
+#footer {
+  font-size: 0.75em;
+}
+.top-button a {
+  position: fixed;
+  bottom: 0px;
+  background-color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0px;
+  text-decoration: none;
+  color: white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.top-button a:hover {
+  color: rgb(200,200,200);
+}

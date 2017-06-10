@@ -1,0 +1,57 @@
+Basics:
+
+  Apps to install:
+    Orbot
+    Orfox
+    Avast Mobile Security
+    Signal
+    CameraV: Secure Visual Proof
+    [insert secure email]
+    [insert working, legit network monitor that doesn’t have other crap]
+    [other VPNs perhaps? Why Tor?]
+    [Firewall, see https://play.google.com/store/apps/details?id=app.greyshirts.firewall&hl=en]
+  Apps to remove:
+    Facebook (online functionality available)
+    Facebook Messenger (online functionality available, if you have a User Agent Switcher)
+    Every Google app you can
+    Instagram
+    Pokemon Go
+    Snapchat
+  How to turn location off
+  Tape or nail polish over the camera
+  How to tweak app permissions, specifically:
+    Location
+    Microphone
+    Camera
+  How to buy a burner SIM and install it
+  Consider: do you really need a smartphone?
+  Throw away the Fitbit/Apple Watch/Pebble/Android Wear/Samsung Gear
+
+Advanced:
+
+  Rooting, and what to do after:
+    How to find a rootkit for your device
+    How to use it
+    The risks and benefits of rooting
+    How to make better use of Tor with root
+    Reliable GPS spoofers
+    Removing Google Apps and replacing with F-Droid and APK downloads (or just suck it up and deal with the apps you have installed, and put GApps back once in a while to run updates)
+  How to modify and/or remove GPS device
+  Permanently disable camera
+  Hardwire hardware switch for microphone
+  Or just remove the microphone and use a set of headphones
+
+When a phone is not enough:
+
+  Public Wifi
+  Secure computers (and why that’s a contradiction)
+  But some computers are better than others
+    Macs
+    Chromebooks
+    Basically anything that’s not Windows
+
+Other Stuff
+
+  Prepaid VISA gift cards as debit/credit replacement
+  Living without a bank
+  Staying off of the public record

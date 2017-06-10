@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D.Va: Making Android More Secure</title>
+    <link rel="stylesheet" href="./meta/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- <div id="header">
+      <div id="header-title">D.Va: Making Android more secure, for those who need it most</div>
+    </div> -->
+    <div class="full-width">
+      <h1 id="top">D.Va: Making Android More Secure</h1>
+      <h2 id="intro">Introduction and Warnings</h2>
+      <p>
+        This is a guide for anyone who is looking to make their Android phone more secure, including and specifically victims of domestic violence and stalking.
+      </p>
+      <p>
+        It should be noted that this guide is not foolproof. Due to the incredible complexity of today's smartphones, there is no technique that make your phone completely secure. The goal of this guide is to make it so difficult to hack or track your phone that it would take a large corporation or a small country to do it effectively. This guide should do that, but there may be something that I overlooked. I don't know.
+      </p>
+    </div>
+    <div class="content-menu">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="./home.html#basics">Basics</a>
+          <ul>
+            <li><a href="./home.html#apps-to-install">Apps to install</a></li>
+            <li><a href="./home.html#apps-to-remove">Apps to remove</a></li>
+            <li><a href="./home.html#turn-location-off">How to turn location on and off</a></li>
+            <li><a href="./home.html#tape-camera">Disabling camera</a></li>
+            <li><a href="./home.html#notifications">Setting up notification privacy</a></li>
+            <li><a href="./home.html#tweak-app-permissions">How to change app permissions</a></li>
+            <li><a href="./home.html#burner-sims">How to buy a burner SIM card and use it</a></li>
+            <li><a href="./home.html#existential-consideration">Consider: do you really need a smartphone?</a></li>
+            <li><a href="./home.html#remove-fitness-trackers">Turn off and don't use your fitness tracker(s)</a></li>
+          </ul>
+        </li>
+        <li><a href="./home.html#advanced">Advanced</a>
+          <ul>
+            <li><a href="./home.html#rooting-top">Rooting, and what to do after:</a>
+              <ul>
+                <li><a href="./home.html#rooting-risks-benefits">The risks and benefits of rooting (PLEASE READ)</a></li>
+                <li><a href="./home.html#rooting-finding">How to find a rootkit for your device</a></li>
+                <li><a href="./home.html#rooting-installing">How to use it</a></li>
+                <li><a href="./home.html#rooting-gps-spoofers">Reliable GPS spoofers</a></li>
+                <li><a href="./home.html#rooting-tor">Rooting and Tor</a></li>
+                <li><a href="./home.html#rooting-remove-gapps">Removing Google Apps and replacing them</a></li>
+              </ul>
+            </li>
+            <li><a href="./home.html#modify-gps">How to modify and/or remove GPS devices</a></li>
+            <li><a href="./home.html#disable-camera">Permanently disable camera</a></li>
+            <li><a href="./home.html#hard-mic-switch">Hardware switch for microphone</a></li>
+            <li><a href="./home.html#external-mic">External microphones/speakers and their benefits</a></li>
+          </ul>
+        </li>
+        <li><a href="./home.html#computer-safety">When a phone is not enough</a>
+          <ul>
+            <li><a href="./home.html#public-wifi">Public WiFi</a></li>
+            <li><a href="./home.html#secure-computers">Secure computers (and why that's a contradiction)</a></li>
+            <li><a href="./home.html#best-computers">But some computers are better than others</a>
+              <ul>
+                <li>Macs</li>
+                <li>Chromebooks</li>
+                <li>Basically anything that's not Windows</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="./home.html#misc">Other Stuff</a>
+          <ul>
+            <li><a href="./home.html#prepaid-visa">Prepaid VISA gift cards as debit/credit card replacements</a></li>
+            <li><a href="./home.html#living-without-banks">Living without a bank</a></li>
+            <li><a href="./home.html#staying-off-public-record">Staying off of the public record</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="content-main">
+      <div id="apps-to-install">
+        <h2 id="basics">Basics</h2>
+        <h3>Apps to install</h3>
+        <p>We recommend installing the following apps:
+          <ul>
+            <li>Orbot (<a href="https://play.google.com/store/apps/details?id=org.torproject.android">Google Play link</a>) and Orfox (<a href="https://play.google.com/store/apps/details?id=info.guardianproject.orfox">Google Play link</a>). These two apps together provide anonymous web browsing, something we'll come back to.</li>
+            <li>Avast! Mobile Security (<a href="https://play.google.com/store/apps/details?id=com.avast.android.mobilesecurity">Google Play link</a>). This app does antivirus scans on your phone, and can detect dangerous apps on your phone (among other things, most of them useful).</li>
+            <li>Fing (<a href="https://play.google.com/store/apps/details?id=com.overlook.android.fing">Google Play link</a>). Fing monitors what devices are connnected to your Wifi.</li>
+            <li>NoRoot Firewall (<a href="https://play.google.com/store/apps/details?id=app.greyshirts.firewall">Google Play link</a>). NoRoot Firewall is an Android firewall. I'll explain what that is <a href="./home.html#firewall-explanation">in a second</a>.
+          </ul>
+        </p>
+        <p>
+          Orbot and Orfox work together to keep you safe online. It is possible for websites, and people, to track you online using a variety of tools. Orbot and Orfox are built on Tor, which was designed and built by the US Government to foil tracking tools. Orbot/Orfox also contains a set of privacy protection tools.
+        </p>
+        <p>
+          Because of those privacy and anti-tracking tools, the Internet will look a little different when you're using Orbot/Orfox. You'll get reCAPTCHAs more often (the things asking you to prove that you're not a robot). Your internet will be slower. Some sites might refuse you access. You'll have to sign into websites more often. It is worth it, in our opinion.
+        </p>
+        <p>
+          Avast! Mobile Security has a couple of tools that we have found useful in times past. Whenever an app is installed or updated, Avast! will check the app for viruses and let you what it finds. It will also scan your device on a regular basis for viruses, your network for vulnerabilities (weak or no password, out-of-date security, etc.).
+        </p>
+        <p>
+          Fing is a weird app. Its job is to look at your Wifi network and tell you what is connected to it. This is good for finding things that are connected that you don't want connected, like hidden cameras, audio bugs, stuff like that. It is possible for devices to hide from this app, but it is tricky. I've only ever seem one device that could do it. (If you're curious, it was a base for a home security system.) Basically, just open the app every once in a while, refresh it, and make sure that there's no surprises in the resultant list.
+        </p>
+        <p id="firewall-explanation">
+          A firewall is a piece of software that regulates internet access. Basically, if you have an app installed, and there's no good reason for it to connect to the Internet, then you can prevent it from accessing the internet. Period. End of discussion. This particular firewall will notify you every time something tries to connect, and ask if you're cool with it. It's pretty cool. Of course, if you say yes, then the firewall will remember that and not ask you again. You can always revoke this permission.
+        </p>
+      </div>
+      <p id="apps-to-remove">
+        <h3>Apps to remove</h3>
+        <p>
+          We recommend removing the following apps:
+          <ul>
+            <li>Facebook</li>
+            <li>Facebook Messenger</li>
+            <li>Snapchat</li>
+            <li>Pokemon GO</li>
+            <li>Twitter</li>
+          </ul>
+        </p>
+        <p>
+          These are all apps that have the ability to publicly post your physical location. Facebook, Facebook Messenger and Twitter can all be accessed online (Messenger requires a little bit of work though; I'll go over that in a separate guide, linked <a href="./messenger-online.html">here</a>). They are not as pretty online, but they are functional, and using the online version makes it harder for the websites to grab your location or other personal information without you knowing about it and giving your consent.
+        </p>
+      </p>
+      <p id="turn-location-off">
+        <h3>Turning Locations Services off</h3>
+        <p>
+          Turning the location service off on your phone makes it much, much more difficult for someone to track your phone. It is still possible, mind you, but it's a lot harder.
+        </p>
+        <p>Here's how to do it:
+          <ol>
+            <li>Open your settings app.</li>
+            <li>Use the search bar to search for Location.</li>
+            <li>Tap the Location search result (there should be one that just says Location).</li>
+            <li>In the settings page that pops up, there should be a toggle switch labeled On. Tap it.</li>
+            <li>Tap Close in the warning box that pops up.</li>
+          </ol>
+        </p>
+        <p>
+          Turning off location makes maps and driving direction apps (like Google Maps, Waze and MapQuest) completely useless. These apps rely on knowing where you are in order to tell you where to go. It might also mess with other apps you have installed. I don't know.
+        </p>
+      </p>
+      <p>
+        There is a way to only allow some apps to access your location. It is not <i>as</i> secure as turning the location off for everything. This being said, it's a lot less of a pain.
+      </p>
+      <p id="tape-camera">
+        <h3>Putting Tape over your Camera</h3>
+        <p>
+          The title of this section pretty much says it all. Put a piece of tape over your camera. I personally prefer heavy-duty black duct tape, but as long as it's opaque, you're probably fine.
+        </p>
+        <p>
+          If you're looking for something that's not quite as obvious, you might try nail polish. I haven't tried it personally, but nail polish is pretty opaque, and you should be able to remove it with rubbing alcohol (although, if you think your screen might not be glass, you should probably avoid normal nail polish remover).
+        </p>
+      </p>
+      <p id="notifications">
+        <h3>Setting Up Notification Privacy</h3>
+        <p>
+          If you configure your notification privacy correctly, you can prevent private content from showing up on your lockscreen. Here's how to do that:
+        </p>
+        <ol>
+          <li>Open up your settings app.</li>
+          <li>Scroll down until you find an entry called "Sound and Notification". Tap on it.</li>
+          <li>Scroll down again until you find an entry called "App notifications". Tap on it.</li>
+          <li>This will load for a few seconds.</li>
+          <li>The list that shows up is a list of all the apps you have installed. Find an app that you want to hide the notifications from, like your texting app or your email. Tap on it.</li>
+          <li>Scroll down until you find the option "Hide sensitive content". There will be a toggle next to the option; turn it on.</li>
+        </ol>
+        <p>
+          After doing this, if you get a notification from this app while your phone is locked, it'll look like this:
+        </p>
+        <p><img id="notification-image" src="./images/hidden-notification.png"></p>
+        <p>
+          You can still see which app just sent you that notification, but you can't see what was in that email or text message.
+        </p>
+        <p>
+          Following is a list of apps that we recommend hiding sensitive content for:
+          <ul>
+            <li>Any and all texting apps you have installed</li>
+            <li>Any and all email apps you have installed.</li>
+            <li>Facebook Messenger, if you still have it installed</li>
+            <li>Snapchat, again, if you still have it installed</li>
+            <li>Any other messaging apps you have installed, including Google Allo, Signal, WhatsApp, ChatSecure, the whole set.</li>
+          </ul>
+        </p>
+        <p>
+          Most of this is common sense, and of course you can adjust things to match what you are comfortable with.
+        </p>
+      </p>
+      <p id="tweak-app-permissions">
+        <h3>How to change app permissions</h3>
+        <p>
+          Android gives users control over what apps can access certain parts of your phone. For instance, a camera app would need access to the camera, a voice recorder would need access to the microphone, a music app would need access to the files on your device, a web browser needs access to your Wi-Fi and cellular connections, stuff like that.
+        </p>
+        <p>
+          Here's the thing: a voice recorder doesn't need access to the Internet. A camera doesn't need Internet access either. An app for taking notes doesn't need access to your camera and microphones. Android uses app permissions to control which apps can access and change things on your phone. This section will show you how to access and control app permissions.
+        </p>
+        <p>
+          <ol>
+            <li>Open the settings app on your phone.</li>
+            <li>Search for Access Permissions. Tap on the entry titled Access Permissions.</li>
+            <li>Tap on Access permissions one more time.</li>
+            <li>This should open a page. On my device, it looks like this:</li>
+          </ol>
+          <img id="app-permissions-screenshot" src="./images/app-permissions-screenshot.png"></img>
+          <ol start="5">
+            <li>From here, you can go through the permissions. There's a lot of this where you just have to use your best judgement. Does Google Calendar need access to your calendar? Probably. Does Facebook need access to your calendar? Probably not.</li>
+          </ol>
+        </p>
+        <p>
+          If an app goes to use something, and your app permissions prevent it from doing so, it will complain at you. Depending on how well built the app is, it might ask you to give permission back, or it might just crash. It depends on the app.
+        </p>
+      </p>
+      <p id="burner-sims">
+        <h3>How to buy a burner SIM and how to install it</h3>
+        <p>
+          [research required]
+        </p>
+      </p>
+      <p id="existential-consideration">
+        <h3>Consider: do you need a smartphone at all?</h3>
+        <p>
+          I've spent the last few hundred words talking about all the ways to secure your Android smartphone. Android is a very flexible, configurable operating system. It can run anything from a weather sensor to a web server. Here's the thing: every thing it can do, every capability it has, can be turned into a weapon. Does the benefit of having a smartphone outweigh the risk it carries?
+        </p>
+        <p>
+          I can't answer this for you. I don't know you, your situation. You will have to make this choice for yourself. If you do decide to stop carrying a smartphone, make sure to turn it off and put it in a safe place. If you don't plan on keeping it, make sure to factory reset your phone before you sell it or throw it away.
+        </p>
+      </p>
+      <p id="remove-fitness-trackers">
+        <h3>Well, what about my Fitbit?</h3>
+        <p>
+          Again, whether or not to continue using a Fitbit or other wearable device is up to you. I don't personally recommend it. A fitness tracker is just that -- a tracker. Using a wearable device takes all of the issues that Android has and adds in any security issues that the wearable itself has.
+        </p>
+        <p>
+          Again, you will have to make this choice for yourself.
+        </p>
+      </p>
+      <h2 id="advanced">Advanced</h2>
+      <div id="rooting-top">
+        <h3>Rooting</h3>
+        <p id="rooting-risks-benefits">
+          Risks and benefits of rooting
+        </p>
+        <p id="rooting-finding">
+          How to find a rootkit
+        </p>
+        <p id="rooting-installing">
+          How to install a rootkit
+        </p>
+        <p id="rooting-gps-spoofers">
+          GPS spoofers
+        </p>
+        <p id="rooting-tor">
+          Rooting and Tor
+        </p>
+        <p id="rooting-remove-gapps">
+          Removing Google Apps and bloatware
+        </p>
+      </div>
+      <p id="modify-gps">
+        Modify GPS
+      </p>
+      <p id="disable-camera">
+        Disable camera
+      </p>
+      <p id="hard-mic-switch">
+        Hardware microphone switch
+      </p>
+      <p id="external-mic">
+        External microphone
+      </p>
+      <h2 id="computer-safety">When a phone is not enough</h2>
+      <p id="public-wifi">
+        Public Wi-Fi
+      </p>
+      <p id="secure-computers">
+        Secure computers (and why that's a contradiction)
+      </p>
+      <p id="best-computers"</p>
+        But some computers are better than others
+        <ul>
+          <li>Macs</li>
+          <li>Chromebooks</li>
+          <li>Basically anything that's not Windows</li>
+        </ul>
+      </p>
+      <h2 id="misc">Other stuff</h2>
+      <p id="prepaid-visa">
+        Prepaid VISA gift cards as debit/credit replacements
+      </p>
+      <p id="living-without-banks">
+        Living without a bank
+      </p>
+      <p id="staying-off-public-record">
+        Staying off the public record
+      </p>
+      <p id="footer">
+        Licensed under GPL 3.0
+      </p>
+    </div>
+    <p class="top-button">
+      <a href="./home.html#top">Top</a>
+    </p>
+  </body>
+</html>
