@@ -4,6 +4,9 @@
 [class*="content-"]{
   width: 100%;
 }
+em {
+  font-style: italic;
+}
 @media only screen and (min-width: 768px) {
   .content-menu {
     width: 30%;
@@ -46,8 +49,11 @@
   color: black;
   font-size: 1.05em;
 }
+.content-menu a {
+  color: black;
+}
 .content-menu a:visited {
-  color: blue;
+  color: rgb(105,105,105);
 }
 .content-main {
   padding: 5px;
@@ -81,6 +87,12 @@ body {font-family: ubuntu;}
 p {
   margin-left: 2%;
   font-size: 1.15em;
+}
+a {
+  color: rgb(0,0,128)
+}
+a.visited {
+  color: rgb(0,0,128)
 }
 @font-face {
   font-family: ubuntu;

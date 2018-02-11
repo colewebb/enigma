@@ -18,6 +18,9 @@
       <p>
         It should be noted that this guide is not foolproof. Due to the incredible complexity of today's smartphones, there is no technique that make your phone completely secure. The goal of this guide is to make it so difficult to hack or track your phone that it would take a large corporation or a small country to do it effectively. This guide should do that, but there may be something that I overlooked. I don't know.
       </p>
+      <p>
+        This guide should work for almost all Android phones currently sold in the United States. This was all tested on Android versions 6.0.1, 7.1 and 8.1.
+      </p>
     </div>
     <div class="content-menu">
       <h2>Contents</h2>
@@ -35,24 +38,6 @@
             <li><a href="./home.html#remove-fitness-trackers">Turn off and don't use your fitness tracker(s)</a></li>
           </ul>
         </li>
-        <li><a href="./home.html#advanced">Advanced</a>
-          <ul>
-            <li><a href="./home.html#rooting-top">Rooting, and what to do after:</a>
-              <ul>
-                <li><a href="./home.html#rooting-risks-benefits">The risks and benefits of rooting (PLEASE READ)</a></li>
-                <li><a href="./home.html#rooting-finding">How to find a rootkit for your device</a></li>
-                <li><a href="./home.html#rooting-installing">How to use it</a></li>
-                <li><a href="./home.html#rooting-gps-spoofers">Reliable GPS spoofers</a></li>
-                <li><a href="./home.html#rooting-tor">Rooting and Tor</a></li>
-                <li><a href="./home.html#rooting-remove-gapps">Removing Google Apps and replacing them</a></li>
-              </ul>
-            </li>
-            <li><a href="./home.html#modify-gps">How to modify and/or remove GPS devices</a></li>
-            <li><a href="./home.html#disable-camera">Permanently disable camera</a></li>
-            <li><a href="./home.html#hard-mic-switch">Hardware switch for microphone</a></li>
-            <li><a href="./home.html#external-mic">External microphones/speakers and their benefits</a></li>
-          </ul>
-        </li>
         <li><a href="./home.html#computer-safety">When a phone is not enough</a>
           <ul>
             <li><a href="./home.html#public-wifi">Public WiFi</a></li>
@@ -62,8 +47,10 @@
                 <li>Macs</li>
                 <li>Chromebooks</li>
                 <li>Basically anything that's not Windows</li>
+                <li>About public computers</li>
               </ul>
             </li>
+            <li><a href="./home.html#vpn">Virtual Private Networks</a></li>
           </ul>
         </li>
         <li><a href="./home.html#misc">Other Stuff</a>
@@ -84,7 +71,8 @@
             <li>Orbot (<a href="https://play.google.com/store/apps/details?id=org.torproject.android">Google Play link</a>) and Orfox (<a href="https://play.google.com/store/apps/details?id=info.guardianproject.orfox">Google Play link</a>). These two apps together provide anonymous web browsing, something we'll come back to.</li>
             <li>Avast! Mobile Security (<a href="https://play.google.com/store/apps/details?id=com.avast.android.mobilesecurity">Google Play link</a>). This app does antivirus scans on your phone, and can detect dangerous apps on your phone (among other things, most of them useful).</li>
             <li>Fing (<a href="https://play.google.com/store/apps/details?id=com.overlook.android.fing">Google Play link</a>). Fing monitors what devices are connnected to your Wifi.</li>
-            <li>NoRoot Firewall (<a href="https://play.google.com/store/apps/details?id=app.greyshirts.firewall">Google Play link</a>). NoRoot Firewall is an Android firewall. I'll explain what that is <a href="./home.html#firewall-explanation">in a second</a>.
+            <li>NoRoot Firewall (<a href="https://play.google.com/store/apps/details?id=app.greyshirts.firewall">Google Play link</a>). NoRoot Firewall is an Android firewall. I'll explain what that is <a href="./home.html#firewall-explanation">in a second</a>.</li>
+            <li>Opera Free VPN - Unlimited VPN (<a href="https://play.google.com/store/apps/details?id=com.opera.vpn&hl=en">Google Play link</a>). Opera Free VPN is a Virtual Private Network, another thing that I'll explain <a href="./home.html#vpn">in a second</a>.</li>
           </ul>
         </p>
         <p>
@@ -189,7 +177,7 @@
           Android gives users control over what apps can access certain parts of your phone. For instance, a camera app would need access to the camera, a voice recorder would need access to the microphone, a music app would need access to the files on your device, a web browser needs access to your Wi-Fi and cellular connections, stuff like that.
         </p>
         <p>
-          Here's the thing: a voice recorder doesn't need access to the Internet. A camera doesn't need Internet access either. An app for taking notes doesn't need access to your camera and microphones. Android uses app permissions to control which apps can access and change things on your phone. This section will show you how to access and control app permissions.
+          Here's the thing: a voice recorder doesn't need access to the Internet. A camera (probably) doesn't need Internet access either. An app for taking notes doesn't need access to your camera and microphones. Android uses app permissions to control which apps can access and change things on your phone. This section will show you how to access and control app permissions.
         </p>
         <p>
           <ol>
@@ -228,67 +216,67 @@
           Again, whether or not to continue using a Fitbit or other wearable device is up to you. I don't personally recommend it. A fitness tracker is just that -- a tracker. Using a wearable device takes all of the issues that Android has and adds in any security issues that the wearable itself has.
         </p>
         <p>
-          Again, you will have to make this choice for yourself.
+          Again, you will have to make this choice for yourself. I don't personally recommend it.
         </p>
-      </p>
-      <h2 id="advanced">Advanced</h2>
-      <div id="rooting-top">
-        <h3>Rooting</h3>
-        <p id="rooting-risks-benefits">
-          Risks and benefits of rooting
-        </p>
-        <p id="rooting-finding">
-          How to find a rootkit
-        </p>
-        <p id="rooting-installing">
-          How to install a rootkit
-        </p>
-        <p id="rooting-gps-spoofers">
-          GPS spoofers
-        </p>
-        <p id="rooting-tor">
-          Rooting and Tor
-        </p>
-        <p id="rooting-remove-gapps">
-          Removing Google Apps and bloatware
-        </p>
-      </div>
-      <p id="modify-gps">
-        Modify GPS
-      </p>
-      <p id="disable-camera">
-        Disable camera
-      </p>
-      <p id="hard-mic-switch">
-        Hardware microphone switch
-      </p>
-      <p id="external-mic">
-        External microphone
       </p>
       <h2 id="computer-safety">When a phone is not enough</h2>
       <p id="public-wifi">
-        Public Wi-Fi
+        <h3>Public Wi-Fi</h3>
+        <p>Public Wi-Fi is something to be very careful with. The following public Wi-Fi sources are usually safe:</p>
+          <ul>
+            <li>Wi-Fi at government organizations, such as libraries, public schools and courthouses.</li>
+            <li>Corporate public Wi-Fi, such as Wi-Fi at Walmart or Starbucks.</li>
+            <li>Public Wi-Fi from small businesses, <em>if</em> you verify the Wi-Fi network name and password with an employee.</li>
+          </ul>
+        <p>
+          If you are using public Wi-Fi, I don't recommend pulling up any kind of personal information (such as bank account information, taxes, pretty much anything on a government website, and so on). The question with public Wi-Fi is not are you being tracked, it's who is tracking you. If you're comfortable with the US Government knowing what you're doing online, then feel free to use Wi-Fi at government organizations.
+        </p>
+        <p>
+          Also bear in mind that the only reason most entities track people on their Wi-Fi is in case someone tries to do something illegal on their Wi-Fi. If you don't do anything illegal on public Wi-Fi, chances are no-one will ever look at what you were doing.
+        </p>
+        <p>
+          There is a way to prevent people from tracking you on public Wi-Fi, and that's by using a Virtual Private Network or VPN. I'll talk about that next.
+        </p>
+      </p>
+      <p id="vpn">
+        <h3>Virtual Private Networks</h3>
+        <p>
+          Virtual Private Networks, or VPNs, are a layer of protection around your web browser. What it is in technical terms is beyond the course of this website. VPNs isolate you from your Wi-Fi network and prevent someone from using your Wi-Fi to figure out where you've been on the Internet. <em>If someone has access to your phone, a VPN will not prevent you from being tracked.</em> A VPN has a simple purpose, and that is to hide where you are going on the Internet from someone who has access to the router you are connected to.
+        </p>
+        <p>
+          This being said, VPNs are useful. If you are on public Wi-Fi, I highly recommend using one. This gives you the advantage of public Wi-Fi (it's free) without the main disadvantage (the owner of the Wi-Fi knows what you're using it for). There are many VPNs available for public use. I personally recommend using Opera's VPN, which is available for Android and iOS through an app (<a href="https://play.google.com/store/apps/details?id=com.opera.vpn&hl=en">Android</a>, <a href="https://itunes.apple.com/us/app/opera-vpn/id1080756781?mt=8">iOS</a>), and for computers through Opera's browser (<a href="http://www.opera.com/computer">here</a>).
+        </p>
+        <p>
+          VPNs come in two flavors: free and paid. Free VPNs are almost always slower than paid VPNs, but they're free. The choice is yours.
+        </p>
+        <p>
+          VPNs are generally speaking a good idea, and are a really good idea when you are on public Wi-Fi and/or looking at sensitive population.
+        </p>
       </p>
       <p id="secure-computers">
-        Secure computers (and why that's a contradiction)
+        <h3>Secure computers (and why that's a contradiction)</h3>
+        <p>
+          So here's the thing about computers in general, including smartphones: there is no such thing as total security. Someone with enough money and enough resources can hack into anything they please. This being said, there are some computers and smartphones that are very easy to get into, and some that aren't.
+        </p>
       </p>
-      <p id="best-computers"</p>
-        But some computers are better than others
+      <p id="best-computers">
+        <h3>Some computers are better than others</h3>
         <ul>
           <li>Macs</li>
           <li>Chromebooks</li>
           <li>Basically anything that's not Windows</li>
+          <li>About public computers</li>
         </ul>
       </p>
       <h2 id="misc">Other stuff</h2>
       <p id="prepaid-visa">
-        Prepaid VISA gift cards as debit/credit replacements
+        <h3>Prepaid VISA gift cards as debit/credit replacements</h3>
       </p>
       <p id="living-without-banks">
-        Living without a bank
+        <h3>Living without a bank</h3>
       </p>
       <p id="staying-off-public-record">
-        Staying off the public record
+        <h3>Staying off the public record</h3>
       </p>
       <p id="footer">
         Licensed under GPL 3.0
